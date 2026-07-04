@@ -1,0 +1,373 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/*==================================
+CONTACTO
+DISEÑO
+==================================*/
+
+.contacto{
+
+    background:linear-gradient(
+    180deg,
+    #fffafc,
+    #ffffff);
+
+}
+
+.contacto-info span{
+
+    color:#ff7eb6;
+
+    font-weight:600;
+
+}
+
+.contacto-info h2{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:55px;
+
+    color:#222;
+
+    margin:18px 0 25px;
+
+}
+
+.contacto-info p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:45px;
+
+}
+
+.dato{
+
+    background:white;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.07);
+
+    transition:.35s;
+
+}
+
+.dato:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.icono{
+
+    background:#ff7eb6;
+
+    color:white;
+
+    border-radius:50%;
+
+    font-size:24px;
+
+}
+
+.dato h3{
+
+    color:#222;
+
+    margin-bottom:8px;
+
+}
+
+.dato p{
+
+    color:#777;
+
+    line-height:1.5;
+
+}
+
+.formulario-contacto{
+
+    background:white;
+
+    border-radius:35px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+}
+
+.formulario-contacto h3{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:35px;
+
+    color:#222;
+
+    margin-bottom:30px;
+
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea{
+
+    background:#fafafa;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:18px;
+
+    font-size:15px;
+
+    font-family:'Poppins',sans-serif;
+
+    transition:.3s;
+
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus{
+
+    background:white;
+
+    box-shadow:0 0 0 2px #ff7eb6;
+
+}
+
+.formulario-contacto button{
+
+    background:#ff7eb6;
+
+    color:white;
+
+    border:none;
+
+    border-radius:40px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.formulario-contacto button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 30px rgba(255,126,182,.35);
+
+}
+
+/*==================================
+Formulario a llenar
+==================================*/
+.formulario-externo{
+
+    background:white;
+
+    border-radius:30px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.07);
+
+    text-align:center;
+
+}
+
+.formulario-externo h3{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:32px;
+
+    color:#222;
+
+}
+
+.formulario-externo p{
+
+    color:#666;
+
+    line-height:1.7;
+
+}
+
+.btn-formulario{
+
+    display:inline-block;
+
+    align-self:center;
+
+    padding:18px 40px;
+
+    background:#ff7eb6;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.btn-formulario:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 30px rgba(255,126,182,.35);
+
+}
+/*==================================
+ANIMACIÓN AL HACER SCROLL
+==================================*/
+
+.formulario-externo{
+
+    animation-name: aparecerFormulario;
+
+    animation-duration: 1s;
+
+    animation-fill-mode: both;
+
+    animation-timing-function: ease-out;
+
+    animation-timeline: view();
+
+    animation-range: entry 20% cover 45%;
+
+}
+
+@keyframes aparecerFormulario{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(180px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+/*=========================
+FOOTER
+DISEÑO
+==========================*/
+
+.footer{
+
+    background:linear-gradient(to bottom,#fff,#fff3f8);
+
+    border-top:2px solid #ffe2ee;
+
+}
+
+.footer h2{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:42px;
+
+    color:#ff7eb6;
+
+}
+
+.footer h3{
+
+    font-size:22px;
+
+    margin-bottom:25px;
+
+    color:#222;
+
+}
+
+.footer p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+.footer ul{
+
+    list-style:none;
+
+}
+
+.footer a{
+
+    text-decoration:none;
+
+    color:#666;
+
+    transition:.3s;
+
+}
+
+.footer a:hover{
+
+    color:#ff7eb6;
+
+    padding-left:8px;
+
+}
+
+.redes a{
+
+    background:white;
+
+    padding:14px 18px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.07);
+
+    transition:.35s;
+
+}
+
+.redes a:hover{
+
+    background:#ff7eb6;
+
+    color:white;
+
+    transform:translateY(-5px);
+
+}
+
+.footer-copy{
+
+    border-top:1px solid #ffd7e8;
+
+    color:#888;
+
+    font-size:15px;
+
+}

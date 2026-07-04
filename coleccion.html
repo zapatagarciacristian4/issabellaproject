@@ -1,0 +1,203 @@
+<head>
+
+    <link rel="stylesheet" type="text/css" href="css/maqueta.css">
+    <link rel="stylesheet" type="text/css" href="css/maqueta_2.css">
+    
+    
+<link href="https://fonts.googleapis.com/css2?family=Emblema+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--================ HEADER =================-->
+
+
+
+
+    <!--================ BANNER =================-->
+
+
+    <header class="navbar">
+
+        <div class="logo">
+            <img src="img/logo.2.png">
+            <a href="index.html">
+                <div class="inicio"></div>
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <a href="index.html">Inicio</a>
+                <a href="coleccion.html">Colecciones</a>
+                <a href="">Novedades</a>
+                <a href="contactos.html">Contacto</a>
+            </ul>
+        </nav>
+
+        <a href="#" class="btn-tienda">Tienda Online</a>
+
+    </header>
+
+
+    <!--================ GALERÍA =================-->
+
+    <section id="coleccion">
+
+        <h2 class="titulo">
+
+            Nuestra Colección
+
+        </h2>
+
+       <section class="productos">
+
+        <div class="card">
+            <img src="img/Niña 0.png" alt="'Estrella Azul">
+
+            <div class="info">
+                <h3>Estrella Azul</h3>
+                <button onclick="abrirModal(
+                    'img/niña 0.png',
+                    'Estrella Azul',
+                    'Conjunto premium diseñado para brindar comodidad y estilo.',
+                    'Lino y Algodón',
+                    '2 a 10 años',
+                    'Azul Cielo',
+                    'Todo el año',
+                    'ISB-002'
+                )">
+                    Ver detalles
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/Niña 2.png" alt="Cielo Encantado">
+
+            <div class="info">
+                <h3>Cielo Encantado</h3>
+                <button onclick="abrirModal(
+                    'img/niña 2.png',
+                    'Cielo Encantado',
+                    'Conjunto premium diseñado para brindar comodidad y estilo.',
+                    'Lino y Algodón',
+                    '2 a 10 años',
+                    'Azul Cielo',
+                    'Todo el año',
+                    'ISB-002'
+                )">
+                    Ver detalles
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/Niña 3.png" alt="Dulce Encanto">
+
+            <div class="info">
+                <h3>Dulce Encanto</h3>
+                <button onclick="abrirModal(
+                    'img/niña 3.png',
+                    'Dulce Encanto',
+                    'Colección exclusiva inspirada en las últimas tendencias.',
+                    'Denim Premium',
+                    '4 a 12 años',
+                    'Azul y Blanco',
+                    'Otoño - Invierno',
+                    'ISB-003'
+                )">
+                    Ver detalles
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/Niña 4.png" alt="Príncipe">
+
+            <div class="info">
+                <h3>Princesa Poppi</h3>
+                <button onclick="abrirModal(
+                    'img/niña 4.png',
+                    'Princesa Poppi',
+                    'Diseño exclusivo pensado para ocasiones especiales.',
+                    'Algodón y Encaje',
+                    '1 a 6 años',
+                    'Rosado Pastel',
+                    'Primavera',
+                    'ISB-004'
+                )">
+                    Ver detalles
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- MODAL -->
+
+    <div class="modal" id="modal">
+
+        <div class="contenido-modal">
+
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+
+            <img id="modalImg">
+
+            <h2 id="modalTitulo"></h2>
+
+            <p id="modalDescripcion"></p>
+
+            <div class="especificaciones">
+
+                <p><strong>Material:</strong> <span id="material"></span></p>
+
+                <p><strong>Tallas:</strong> <span id="tallas"></span></p>
+
+                <p><strong>Colores:</strong> <span id="colores"></span></p>
+
+                <p><strong>Temporada:</strong> <span id="temporada"></span></p>
+
+                <p><strong>Referencia:</strong> <span id="referencia"></span></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <img src="img/logo.2.png" alt="Isabella">
+
+        <p>Moda Infantil Premium</p>
+
+        <p>© 2027 Isabella Ropa Infantil</p>
+
+    </footer>
+
+    <script>
+
+        function abrirModal(imagen, titulo, descripcion, materialProducto, tallasProducto, coloresProducto, temporadaProducto, referenciaProducto) {
+
+            document.getElementById("modal").style.display = "flex";
+
+            document.getElementById("modalImg").src = imagen;
+            document.getElementById("modalTitulo").innerHTML = titulo;
+            document.getElementById("modalDescripcion").innerHTML = descripcion;
+
+            document.getElementById("material").innerHTML = materialProducto;
+            document.getElementById("tallas").innerHTML = tallasProducto;
+            document.getElementById("colores").innerHTML = coloresProducto;
+            document.getElementById("temporada").innerHTML = temporadaProducto;
+            document.getElementById("referencia").innerHTML = referenciaProducto;
+        }
+
+        function cerrarModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+
+    </script>
+
+</body>
+</html>

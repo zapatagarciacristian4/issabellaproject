@@ -1,0 +1,295 @@
+/*=========================
+      ESTILOS GENERALES
+=========================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+
+}
+ .titulo{
+  font-family: "Emblema One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:linear-gradient(180deg,#fffdfd,#fff4fb,#f8f8ff);
+
+    color:#444;
+
+}
+
+
+/*=========================
+        HEADER
+=========================*/
+
+header{
+
+    text-align:center;
+
+    padding:40px 8%;
+
+}
+
+.logo{
+    
+    width:180px;
+
+    transition:.4s;
+
+}
+
+.logo:hover{
+
+    transform:scale(1.05);
+
+}
+
+header h1{
+
+    color:#d06cff;
+
+    font-size:55px;
+
+    margin-top:20px;
+
+}
+
+header p{
+
+    margin-top:15px;
+
+    color:#666;
+
+    font-size:20px;
+
+}
+
+
+/*=========================
+        BANNER
+=========================*/
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 8%;
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+
+background:rgba(255,255,255,.8);
+backdrop-filter:blur(15px);
+}
+
+.logo img{
+height:90px;
+
+}
+
+nav ul{
+display:flex;
+gap:80px;
+list-style:none;
+font-size:20;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+.btn-tienda{
+padding:15px 20px;
+font-size:20;
+background:#ff7eb6;
+color:white;
+border-radius:50px;
+text-decoration:none;
+transition:.4s;
+}
+
+.btn-tienda:hover{
+transform:translateY(-3px);
+}
+
+
+
+/*=========================
+        TITULO
+=========================*/
+
+.titulo{
+
+    text-align:center;
+
+    margin:140px 0 40px;
+   
+  
+    color:#ff7eb6;
+
+    font-size:42px;
+    
+
+}
+
+
+.productos{
+    width:50%;
+    margin: auto;
+    display: flex;
+    gap: 40px; 
+}
+
+.card{
+    background:white;
+    border-radius:40px;
+
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:140%;
+    padding:10px;
+}
+
+.info{
+    padding:25px;
+    text-align:center;
+}
+
+.info h3{
+    color:#8c66ff;
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+.info p{
+   
+    margin-bottom:25px;
+    line-height:1.6;
+}
+
+button{
+
+padding:15px 35px;
+border-radius:50px;
+background:linear-gradient(135deg,#ff7eb6,white);
+font-size:17px;
+font-weight:600;
+transition:.4s;
+
+}
+
+button:hover{
+
+transform:translateY(-4px);
+
+
+
+}
+.modal{
+   
+    display:none;
+    position:fixed;
+    inset:0;
+
+    
+    backdrop-filter:blur(10px);
+
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+
+    z-index:99999;
+}
+
+
+.contenido-modal{
+    width:90%;
+    max-width:650px;
+    background:white;
+    border-radius:30px;
+    padding:35px;
+    text-align:center;
+    position:relative;
+}
+
+.contenido-modal img{
+    width:100%;
+    max-height:400px;
+    object-fit:contain;
+}
+
+.contenido-modal h2{
+    color:#ff7eb6;
+    margin:20px 0;
+}
+
+.contenido-modal p{
+    color:#666;
+    line-height:1.8;
+}
+
+.especificaciones{
+    margin-top:25px;
+    text-align:left;
+    background:#f8f5ff;
+    padding:20px;
+    border-radius:20px;
+}
+
+.especificaciones p{
+    margin:10px 0;
+}
+
+.cerrar{
+    position:absolute;
+    top:15px;
+    right:25px;
+    font-size:35px;
+    cursor:pointer;
+}
+
+footer{
+    margin-top:80px;
+    background:#ff7eb6;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+footer img{
+    width:180px;
+    margin-bottom:20px;
+}
+
+
+@media(max-width:768px){
+
+    .card img{
+        height:320px;
+    }
+
+    h1{
+        font-size:35px;
+    }
+
+}
